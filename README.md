@@ -15,6 +15,19 @@ Create a new repository in the current working directory:
 cookiecutter git@git.internal.getwellnetwork.com:plcdev/_template.git
 ```
 
+selecting a template
+--------------------
+
+Different types of templates (e.g. "a python library", "a dbus service") are
+provided by the branches in this repository.
+
+You can select different branches with cookiecutter's `-c` or `--checkout`
+option.
+
+```
+cookiecutter git@git.internal.getwellnetwork.com:plcdev/_template.git -c python-library
+```
+
 configuration
 -------------
 
@@ -34,6 +47,12 @@ Now I can just run it like this:
 cookiecutter _template
 ```
 
+and selecting which template to use now looks like this:
+
+```
+cookiecutter _template -c python-library
+```
+
 operating on an existing directory
 ----------------------------------
 
@@ -50,11 +69,8 @@ Note that you'll still have to fill in the `repository_name` field manually
 when prompted.
 
 
-branches
-========
-
-Different types of templates (e.g. "a python library", "a dbus service") are
-provided by the branches in this repository.
+master
+======
 
 The `master` branch serves as a blank, mostly empty repository template that
 provides only our standard debian packaging boilerplate. It's a good starting
