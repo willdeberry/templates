@@ -19,12 +19,12 @@ Here's what to do next:
  2. Create a project named '{{ cookiecutter.repository_name }}'
  3. Come back here
  4. Run these commands:
-    cd {{ cookiecutter.repository_name }}
-    git init
-    git add .
-    git commit -m 'initial commit'
-    git remote add origin git@git.internal.getwellnetwork.com:plcdev/{{ cookiecutter.repository_name }}.git
-    git push -u origin master
+	cd {{ cookiecutter.repository_name }}
+	git init
+	git add .
+	git commit -m 'initial commit'
+	git remote add origin git@git.internal.getwellnetwork.com:plcdev/{{ cookiecutter.repository_name }}.git
+	git push -u origin master
 
 EOF
 
