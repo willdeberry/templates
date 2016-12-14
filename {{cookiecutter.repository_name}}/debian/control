@@ -4,6 +4,7 @@ Priority: optional
 Maintainer: GetWellNetwork <plc-dev@getwellnetwork.com>
 Build-Depends:
  debhelper (>=9),
+ dh-systemd (>= 1.5),
  dh-python,
  python3-all,
  python3-pytest,
@@ -16,6 +17,10 @@ Architecture: {{ cookiecutter.debian_architecture }}
 Depends:
  ${misc:Depends},
  ${python3:Depends},
+ adduser,
+ dbus,
+ python3-dbus,
+ python3-gi,
  python3-setuptools,
  gwn,
  gwn-helpers

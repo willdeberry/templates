@@ -1,0 +1,11 @@
+[Unit]
+Description={{ cookiecutter.systemd_service_description }}
+
+[Service]
+Type=dbus
+BusName={{ cookiecutter.dbus_bus_name }}
+ExecStart=/usr/bin/{{ cookiecutter.service_executable }}
+User={{ cookiecutter.service_run_as_user }}
+
+[Install]
+WantedBy=multi-user.target

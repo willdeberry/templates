@@ -1,0 +1,3 @@
+Test-Command: py.test-3 --junit-xml=$ADT_ARTIFACTS/integration.xml tests/integration
+Depends: @, python3-pytest
+Restrictions: needs-root
