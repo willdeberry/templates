@@ -1,0 +1,10 @@
+
+debian/debhelper-build-stamp
+debian/files
+debian/{{ cookiecutter.debian_package_name }}.debhelper.log
+debian/{{ cookiecutter.debian_package_name }}.postinst.debhelper
+debian/{{ cookiecutter.debian_package_name }}.postrm.debhelper
+debian/{{ cookiecutter.debian_package_name }}.prerm.debhelper
+debian/{{ cookiecutter.debian_package_name }}.substvars
+debian/{{ cookiecutter.debian_package_name }}
+
