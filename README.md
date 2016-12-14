@@ -6,12 +6,14 @@ The `_template` repository provides a set of templates for use with `cookiecutte
 (https://cookiecutter.readthedocs.io/en/latest/index.html).
 
 
-python-library
-==============
+python-dbus-service
+===================
 
-The python library branch provides a simple python library with the following features:
+The python dbus service branch provides a service process with the following
+features:
 
-* it's a python library, you can import it
-* it's namespaced under the `gwn` import path
-* it comes out of the box with unit tests
+* long running service
+* integrated with systemd for init
+* publishes a service on dbus
+* it comes out of the box with unit and integration tests
 
