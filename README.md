@@ -9,7 +9,7 @@ The `_template` repository provides a set of templates for use with `cookiecutte
 usage
 =====
 
-Create a new repository in the current working directory:
+Create a new repository under the current working directory:
 
 ```
 cookiecutter git@git.internal.getwellnetwork.com:plcdev/_template.git
