@@ -3,6 +3,8 @@
 	"debian_package_name": "{{ cookiecutter.repository_name }}",
 	"debian_package_short_description": "",
 	"debian_package_long_description": "",
-	"debian_section": "utils",
-	"debian_architecture": "any"
+	"debian_section": "python",
+	"debian_architecture": "all",
+	"python_import_path": "{{ cookiecutter.repository_name.replace( 'gwn-', 'gwn.', 1 ).replace( '-', '' ) }}",
+	"python_subpackage_name": "{{ cookiecutter.python_import_path.replace( 'gwn.', '', 1 ) }}"
 }
