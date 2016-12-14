@@ -2,7 +2,7 @@
 \_template
 ==========
 
-The `\_template` repository provides a set of templates for use with `cookiecutter`
+The `_template` repository provides a set of templates for use with `cookiecutter`
 (https://cookiecutter.readthedocs.io/en/latest/index.html).
 
 
@@ -21,7 +21,7 @@ configuration
 To avoid typing out this full repository URL every time you want to use
 cookiecutter, you can create a `.cookiecutterrc` file in your home directory
 that includes aliases for commonly used template repositories. For example, here
-is mine which allows me to just refer to this repository as `\_template`.
+is mine which allows me to just refer to this repository as `_template`.
 
 ```yaml
 abbreviations:
