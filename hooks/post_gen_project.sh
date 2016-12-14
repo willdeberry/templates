@@ -5,6 +5,9 @@ if ! [[ -e ./debian/changelog ]] ; then
 fi
 
 
+$EDITOR README.md
+
+
 cat <<EOF
 
 
