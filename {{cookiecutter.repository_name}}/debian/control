@@ -1,0 +1,12 @@
+Source: {{ cookiecutter.debian_package_name }}
+Section: {{ cookiecutter.debian_section }}
+Priority: optional
+Maintainer: GetWellNetwork <plc-dev@getwellnetwork.com>
+Build-Depends: debhelper (>=9)
+Standards-Version: 3.9.7
+
+Package: {{ cookiecutter.debian_package_name }}
+Architecture: {{ cookiecutter.debian_architecture }}
+Depends: ${misc:Depends}
+Description: {{ cookiecutter.debian_package_short_description }}
+ {{ cookiecutter.debian_package_long_description | wordwrap( wrapstring = '\n ' ) }}

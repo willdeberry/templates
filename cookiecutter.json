@@ -1,0 +1,8 @@
+{
+	"repository_name": "gwn-example",
+	"debian_package_name": "{{ cookiecutter.repository_name }}",
+	"debian_package_short_description": "",
+	"debian_package_long_description": "",
+	"debian_section": "utils",
+	"debian_architecture": "any"
+}

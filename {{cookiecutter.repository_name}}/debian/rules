@@ -1,0 +1,9 @@
+#!/usr/bin/make -f
+# `man 7 debhelper` for more details on this file and available env variables
+
+# output every command that modifies files on the build system.
+export DH_VERBOSE = 1
+
+%:
+	dh $@
+
