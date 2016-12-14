@@ -23,7 +23,7 @@ Here's what to do next:
     git init
     git add .
     git commit -m 'initial commit'
-	make unit
+    make unit
     git remote add origin git@git.internal.getwellnetwork.com:plcdev/{{ cookiecutter.repository_name }}.git
     git push -u origin master
 
