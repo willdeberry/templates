@@ -1,5 +1,3 @@
-include /usr/share/gwn-dev-tools/Makefile
+-include /usr/share/gwn-dev-tools/Makefile
 
 default:
-	:
-
