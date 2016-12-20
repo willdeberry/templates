@@ -1,7 +1,0 @@
-#!/bin/bash
-
-set -e
-
-adduser --system --no-create-home --home /nonexistent --shell /bin/false {{ cookiecutter.service_run_as_user }}
-
-#DEBHELPER#

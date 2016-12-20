@@ -18,11 +18,11 @@ Architecture: {{ cookiecutter.debian_architecture }}
 Depends:
  ${misc:Depends},
  ${python3:Depends},
- adduser,
  dbus,
  python3-dbus,
  python3-gi,
  python3-setuptools,
+ gwn-create-users,
  gwn,
  gwn-helpers
 Description: {{ cookiecutter.debian_package_short_description }}

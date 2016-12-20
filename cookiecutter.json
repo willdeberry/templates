@@ -12,6 +12,5 @@
 	"dbus_bus_name": "com.getwellnetwork.plc.{{ cookiecutter.repository_name.replace( 'gwn-', '', 1 ).replace( '-', '' ) }}1",
 	"dbus_object_path": "/{{ cookiecutter.dbus_bus_name.replace( '.', '/' ) }}/Foo",
 	"dbus_interface": "{{ cookiecutter.dbus_object_path.replace( '/', '', 1 ).replace( '/', '.' ).replace( '-', '' ) }}1",
-	"service_executable": "{{ cookiecutter.repository_name }}",
-	"service_run_as_user": "{{ cookiecutter.repository_name }}"
+	"service_executable": "{{ cookiecutter.repository_name }}"
 }
