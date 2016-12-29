@@ -42,5 +42,5 @@ fi
 # `adt-run` puts us in a copy of the project source tree, somewhere under /tmp inside the VM
 # but `sudo -i` will cd to /home/patient, so we'll need to fully qualify the path to tests/integration
 staging_directory="$( pwd )"
-sudo -u patient -i py.test-3 --cache-clear --junit-xml=$ADT_ARTIFACTS/integration.xml "${staging_directory}"/tests/integration
+sudo -u patient -i py.test-3 --junit-xml=$ADT_ARTIFACTS/integration.xml "${staging_directory}"/tests/integration
 
