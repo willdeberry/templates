@@ -1,0 +1,1 @@
+usr/lib/systemd/user/{{ cookiecutter.systemd_service_name }}.service etc/skel.d/patient/.config/systemd/user/xorg.target.wants/{{ cookiecutter.systemd_service_name }}.service

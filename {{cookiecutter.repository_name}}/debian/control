@@ -24,6 +24,7 @@ Depends:
  python3-setuptools,
  gwn-create-users,
  gwn,
- gwn-helpers
+ gwn-helpers,
+ gwn-xorg-target
 Description: {{ cookiecutter.debian_package_short_description }}
  {{ cookiecutter.debian_package_long_description | wordwrap( wrapstring = '\n ' ) }}
