@@ -1,6 +1,7 @@
 #! /bin/bash
 
 set -e
+set -x
 
 function service_is_running() {
 	sudo -u patient -i systemctl --user is-active '{{ cookiecutter.systemd_service_name }}.service'
@@ -21,25 +22,25 @@ systemctl restart nodm.service
 
 
 
-# systemctl definitely doesn't block for nodm.service, because it is a legacy, sysv init script. Thus,
-# we need a wait loop here so we don't start running assertions when test bed setup is incomplete.
-deadline="$( date +%s )"
-let 'deadline+=60'
+if ! service_is_running ; then
+	deadline="$( date +%s )"
+	let 'deadline+=60'
 
-while [[ "$( date +%s )" -le "${deadline}" ]] ; do
-	if service_is_running &>/dev/null ; then
-		break
-	else
-		sleep 0.25
-	fi
-done
+	while [[ "$( date +%s )" -le "${deadline}" ]] ; do
+		if service_is_running ; then
+			break
+		else
+			sleep 0.25
+		fi
+	done
 
-# let `set -e` bail us out if we exited the loop gracefully instead of via `break`, that is: the deadline expired.
-service_is_running
+	# let `set -e` bail us out if we exited the loop gracefully instead of via `break`, that is: the deadline expired.
+	service_is_running
+fi
 
 
 # `adt-run` puts us in a copy of the project source tree, somewhere under /tmp inside the VM
 # but `sudo -i` will cd to /home/patient, so we'll need to fully qualify the path to tests/integration
 staging_directory="$( pwd )"
-sudo -u patient -i py.test-3 --junit-xml=$ADT_ARTIFACTS/integration.xml "${staging_directory}"/tests/integration
+sudo -u patient -i py.test-3 --cache-clear --junit-xml=$ADT_ARTIFACTS/integration.xml "${staging_directory}"/tests/integration
 
