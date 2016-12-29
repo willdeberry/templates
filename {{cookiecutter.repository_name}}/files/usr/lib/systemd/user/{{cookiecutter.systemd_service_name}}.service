@@ -7,4 +7,4 @@ BusName={{ cookiecutter.dbus_bus_name }}
 ExecStart=/usr/bin/{{ cookiecutter.service_executable }}
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=xorg.target
