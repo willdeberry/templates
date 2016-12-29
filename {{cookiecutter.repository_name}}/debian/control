@@ -4,7 +4,6 @@ Priority: optional
 Maintainer: GetWellNetwork <plc-dev@getwellnetwork.com>
 Build-Depends:
  debhelper (>=9),
- dh-systemd (>= 1.5),
  dh-python,
  python3-all,
  python3-pytest,
