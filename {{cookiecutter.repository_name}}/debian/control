@@ -22,7 +22,6 @@ Depends:
  dbus,
  python3-dbus,
  python3-gi,
- python3-setuptools,
  gwn,
  gwn-helpers
 Description: {{ cookiecutter.debian_package_short_description }}
