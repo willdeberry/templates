@@ -1,5 +1,5 @@
 
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name = '{{ cookiecutter.debian_package_name }}',
@@ -8,7 +8,7 @@ setup(
     author = 'GetWellNetwork',
     author_email = 'plc-dev@getwellnetwork.com',
     license = 'Copyright 2016 GetWellNetwork, Inc., BSD copyright and disclaimer apply',
-    packages = [ 'gwn', 'gwn.{{ cookiecutter.python_subpackage_name }}' ],
+    packages = find_packages( exclude = ['contrib', 'docs', 'tests'] ),
     namespace_packages = [ 'gwn' ]
 )
 
