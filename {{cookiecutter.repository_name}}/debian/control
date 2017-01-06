@@ -16,7 +16,6 @@ Architecture: {{ cookiecutter.debian_architecture }}
 Depends:
  ${misc:Depends},
  ${python3:Depends},
- python3-setuptools,
  gwn,
  gwn-helpers
 Description: {{ cookiecutter.debian_package_short_description }}
