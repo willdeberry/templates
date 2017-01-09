@@ -30,7 +30,7 @@ if ! service_is_running ; then
 		if service_is_running ; then
 			break
 		else
-			sleep 0.25
+			sleep 2
 		fi
 	done
 
