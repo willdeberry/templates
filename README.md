@@ -11,7 +11,7 @@ code review notes
 
 Some extra notes about code reviewing this project:
 
-1.  this project doesn't follow the tagging release workflow that the rest of our projects
+1.  this project doesn't follow the tagging release workflow that the rest of our projects do
 1.  feature branching is possible, so that part of the review workflow is the same except
     that changes are "live" after pushing the merge into master, not a tag built by jenkins
 1.  work with the developer to determine which other branches a feature should also be merged
