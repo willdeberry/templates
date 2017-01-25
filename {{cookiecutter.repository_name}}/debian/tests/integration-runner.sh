@@ -9,6 +9,14 @@ function service_is_running() {
 
 
 
+function scrape_logs() {
+	journalctl >"${ADT_ARTIFACTS}/journal.txt"
+}
+
+trap scrape_logs EXIT
+
+
+
 systemctl restart gwn-seed-patient.service
 # It is unclear when `systemctl` is and is not blocking. If the call to seed /home/patient is non-blocking
 # then there is a theoretical race condition here where nodm will start running at a point in time when not
