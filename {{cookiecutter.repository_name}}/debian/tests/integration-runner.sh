@@ -9,6 +9,14 @@ function service_is_running() {
 
 
 
+function scrape_logs() {
+	journalctl >"${ADT_ARTIFACTS}/journal.txt"
+}
+
+trap scrape_logs EXIT
+
+
+
 if ! service_is_running ; then
 	systemctl start '{{ cookiecutter.systemd_service_name }}.service'
 
