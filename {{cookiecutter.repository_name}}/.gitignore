@@ -1,4 +1,8 @@
 
+*.swp
+
+
+
 debian/debhelper-build-stamp
 debian/files
 debian/{{ cookiecutter.debian_package_name }}.debhelper.log
