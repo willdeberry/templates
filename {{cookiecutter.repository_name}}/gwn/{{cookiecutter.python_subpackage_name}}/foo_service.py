@@ -1,6 +1,3 @@
-"""
-Provides the Foo DBus service.
-"""
 
 import dbus.service
 
@@ -13,8 +10,7 @@ from .foo import foo
 
 class FooService( dbus.service.Object ):
     """
-    A service, available on the system bus, providing services for the ultimate question of life,
-    the universe, and everything.
+    Provides DBus services for the ultimate question of life, the universe, and everything.
 
     :Bus:
         ``system``
