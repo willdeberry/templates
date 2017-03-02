@@ -13,5 +13,8 @@
 	"dbus_object_path": "/{{ cookiecutter.dbus_bus_name.replace( '.', '/' ) }}/Foo",
 	"dbus_interface": "{{ cookiecutter.dbus_object_path.replace( '/', '', 1 ).replace( '/', '.' ).replace( '-', '' ) }}1",
 	"service_executable": "{{ cookiecutter.repository_name }}",
-	"service_run_as_user": "{{ cookiecutter.repository_name }}"
+	"service_run_as_user": "{{ cookiecutter.repository_name }}",
+	"_copy_without_render": [
+		"sphinx/_templates/*.rst"
+	]
 }
