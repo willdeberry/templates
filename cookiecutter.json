@@ -6,5 +6,8 @@
 	"debian_section": "python",
 	"debian_architecture": "all",
 	"python_import_path": "{{ cookiecutter.repository_name.replace( 'gwn-', 'gwn.', 1 ).replace( '-', '' ) }}",
-	"python_subpackage_name": "{{ cookiecutter.python_import_path.replace( 'gwn.', '', 1 ) }}"
+	"python_subpackage_name": "{{ cookiecutter.python_import_path.replace( 'gwn.', '', 1 ) }}",
+	"_copy_without_render": [
+		"sphinx/_templates/*.rst"
+	]
 }
