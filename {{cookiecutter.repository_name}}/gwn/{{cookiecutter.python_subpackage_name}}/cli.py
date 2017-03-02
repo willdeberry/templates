@@ -9,6 +9,7 @@ from .foo_service import FooService
 
 
 def main():
+    """The main entry point for the systemd service."""
     DBusGMainLoop( set_as_default = True )
 
     service = FooService()
