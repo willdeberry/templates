@@ -41,9 +41,9 @@ todo_include_todos = False
 
 
 extensions = [
-	'sphinx.ext.autodoc',
-	'sphinx.ext.autosummary',
-	'sphinx.ext.napoleon'
+    'sphinx.ext.autodoc',
+    'sphinx.ext.autosummary',
+    'sphinx.ext.napoleon'
 ]
 
 # the class description is both the class's docstring and its
@@ -55,33 +55,33 @@ autoclass_content = 'class'
 # bysource is by source order
 autodoc_member_order = 'bysource'
 autodoc_default_flags = [
-	'members', # include non-private members
-	'undoc-members', # include members without a docstring
-	#'private-members', # include _private and __private
-	#'special-members', # include __special__ members
-	#'inherited-members', # include members inherited from the base class
-	'show-inheritance', # include the inheritance hierarchy of a class
+    'members', # include non-private members
+    'undoc-members', # include members without a docstring
+    #'private-members', # include _private and __private
+    #'special-members', # include __special__ members
+    #'inherited-members', # include members inherited from the base class
+    'show-inheritance', # include the inheritance hierarchy of a class
 ]
 # a list of modules to be mocked up, such as to prevent import errors if
 # runtime dependencies cannot be met at build time
 autodoc_mock_imports = [
-	'gwn.helpers',
-	'gwn.helpers.dbuscast',
-	'gwn.logger',
-	'gwn.logger.logger',
-	'dbus',
-	'dbus.mainloop.glib',
-	'dbus.mainloop.glib.DBusGMainLoop',
-	'dbus.service',
-	'gi.repository',
-	'gi.repository.GObject',
-	'systemd.journal.JournalHandler'
+    'gwn.helpers',
+    'gwn.helpers.dbuscast',
+    'gwn.logger',
+    'gwn.logger.logger',
+    'dbus',
+    'dbus.mainloop.glib',
+    'dbus.mainloop.glib.DBusGMainLoop',
+    'dbus.service',
+    'gi.repository',
+    'gi.repository.GObject',
+    'systemd.journal.JournalHandler'
 ]
 
 autosummary_generate = True
 
 napoleon_numpy_docstring = False  # Force consistency, leave only Google
-napoleon_use_rtype = False	# More legible
+napoleon_use_rtype = False    # More legible
 
 
 
@@ -91,7 +91,7 @@ napoleon_use_rtype = False	# More legible
 html_theme = 'sphinx_rtd_theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
-# further.	For a list of options available for each theme, see the
+# further.    For a list of options available for each theme, see the
 # documentation.
 #
 # html_theme_options = {}
