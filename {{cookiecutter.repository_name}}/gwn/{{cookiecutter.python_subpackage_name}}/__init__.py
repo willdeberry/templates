@@ -1,5 +1,5 @@
 """
-{{ cookiecutter.debian_package_long_description | wordwrap( wrapstring = '\n ' ) }}
+{{ cookiecutter.debian_package_long_description | wordwrap( wrapstring = '\n' ) }}
 
 DBus Service
 ------------
