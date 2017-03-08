@@ -5,7 +5,7 @@
 
 ## API Docs
 
-https://plc-jenkins.internal.getwellnetwork.com/apidocs/{{ cookiecutter.repository_name }}/{{ cookiecutter.python_import_path }}.html
+https://plc.internal.getwellnetwork.com/{{ cookiecutter.repository_name }}/{{ cookiecutter.python_import_path }}.html
 
 ## Major Features
 
