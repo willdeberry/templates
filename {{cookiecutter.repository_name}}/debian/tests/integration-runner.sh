@@ -18,7 +18,7 @@ trap scrape_logs EXIT
 
 
 if ! service_is_running ; then
-	systemctl start '{{ cookiecutter.systemd_service_name }}.service'
+	systemctl restart '{{ cookiecutter.systemd_service_name }}.service'
 
 	deadline="$( date +%s )"
 	let 'deadline+=60'
