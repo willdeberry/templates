@@ -66,7 +66,8 @@ autodoc_default_flags = [
 # runtime dependencies cannot be met at build time
 autodoc_mock_imports = [
     'gwn.helpers',
-    'gwn.helpers.dbuscast',
+    'gwn.helpers.dbus',
+    'gwn.helpers.dbus.dbuscast',
     'gwn.logger',
     'gwn.logger.logger',
     'dbus',
