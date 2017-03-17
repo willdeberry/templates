@@ -2,7 +2,7 @@
 from dbus.mainloop.glib import DBusGMainLoop
 from gi.repository.GObject import MainLoop
 
-from gwn.logger import logger
+from gwn.helpers.logger import logger
 
 from .foo_service import FooService
 

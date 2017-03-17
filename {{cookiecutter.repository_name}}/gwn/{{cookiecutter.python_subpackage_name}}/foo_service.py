@@ -1,7 +1,7 @@
 
 import dbus.service
 
-from gwn.logger import logger
+from gwn.helpers.logger import logger
 
 from . import BUSNAME, OBJECTPATH, INTERFACE
 from .foo import foo
