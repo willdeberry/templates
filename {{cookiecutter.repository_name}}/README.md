@@ -1,7 +1,7 @@
 
 # {{ cookiecutter.repository_name }}
 
-{{ cookiecutter.debian_package_long_description | wordwrap( width = 119, wrapstring = '\n ' ) }}
+{{ cookiecutter.debian_package_long_description | wordwrap( width = 119, wrapstring = '\n' ) }}
 
 ## Major Features
 
