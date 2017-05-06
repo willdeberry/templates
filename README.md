@@ -26,7 +26,13 @@ This branch provides:
 	* `installnow`
 	* `graph`
 	* `unit`
+	* `integrate`
 * importable python modules
+* a DBus service
+	* system bus
+	* started by systemd
+	* runs as dedicated user
 * unit tests
+* integration tests
 * sphinx API docs published by jenkins builds
 
