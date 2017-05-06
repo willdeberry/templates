@@ -15,3 +15,12 @@ The python library branch provides a simple python library with the following fe
 * it's namespaced under the `gwn` import path
 * it comes out of the box with unit tests
 
+This branch provides:
+
+* debian packaging boilerplate; the following make targets will work:
+	* `apt-silo`
+	* `tag`
+	* `deb`
+	* `installnow`
+	* `graph`
+
