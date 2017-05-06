@@ -88,3 +88,12 @@ The `master` branch serves as a blank, mostly empty repository template that
 provides only our standard debian packaging boilerplate. It's a good starting
 point if you want to create a new template from (nearly) scratch.
 
+This branch provides:
+
+* debian packaging boilerplate; the following make targets will work:
+	* `apt-silo`
+	* `tag`
+	* `deb`
+	* `installnow`
+	* `graph`
+
