@@ -21,4 +21,6 @@ __namespace__ = 'gwn'
 BUSNAME = '{{ cookiecutter.dbus_bus_name }}'
 OBJECTPATH = '{{ cookiecutter.dbus_object_path }}'
 INTERFACE = '{{ cookiecutter.dbus_interface }}'
+SUPPORT_OBJECTPATH = '{{ cookiecutter.dbus_support_object_path }}'
+SUPPORT_INTERFACE = '{{ cookiecutter.dbus_support_interface }}'
 
