@@ -23,4 +23,8 @@ This branch provides:
 	* `deb`
 	* `installnow`
 	* `graph`
+	* `unit`
+* importable python modules
+* unit tests
+* sphinx API docs published by jenkins builds
 
