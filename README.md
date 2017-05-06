@@ -29,9 +29,9 @@ This branch provides:
 	* `integrate`
 * importable python modules
 * a DBus service
-	* system bus
-	* started by systemd
-	* runs as dedicated user
+	* session bus
+	* started by systemd, triggered by openbox startup
+	* runs as patient
 * unit tests
 * integration tests
 * sphinx API docs published by jenkins builds
