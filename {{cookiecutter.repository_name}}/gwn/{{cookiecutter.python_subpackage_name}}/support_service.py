@@ -2,7 +2,7 @@
 Provides DBus services for Support and Health monitoring.
 
 :Bus:
-    ``system``
+    ``session``
 :Busname:
     ``{{ cookiecutter.dbus_bus_name }}``
 :ObjectPath:
@@ -24,7 +24,7 @@ from . import BUSNAME, SUPPORT_OBJECTPATH, SUPPORT_INTERFACE
 class SupportService( dbus.service.Object ):
 
     def __init__( self ):
-        bus_name = dbus.service.BusName( BUSNAME, bus = dbus.SystemBus() )
+        bus_name = dbus.service.BusName( BUSNAME, bus = dbus.SessionBus() )
         super().__init__( bus_name = bus_name, object_path = SUPPORT_OBJECTPATH )
 
 
