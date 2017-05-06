@@ -36,5 +36,5 @@ if ! service_is_running ; then
 fi
 
 
-py.test-3 -ra --cache-clear --junit-xml=$ADT_ARTIFACTS/integration.xml tests/integration
+py.test-3 -v -ra --cache-clear --junit-xml=$ADT_ARTIFACTS/integration.xml tests/integration
 
