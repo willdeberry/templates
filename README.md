@@ -17,3 +17,22 @@ features:
 * publishes a service on dbus
 * it comes out of the box with unit and integration tests
 
+This branch provides:
+
+* debian packaging boilerplate; the following make targets will work:
+	* `apt-silo`
+	* `tag`
+	* `deb`
+	* `installnow`
+	* `graph`
+	* `unit`
+	* `integrate`
+* importable python modules
+* a DBus service
+	* system bus
+	* started by systemd
+	* runs as dedicated user
+* unit tests
+* integration tests
+* sphinx API docs published by jenkins builds
+
