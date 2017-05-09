@@ -10,7 +10,7 @@ build/venv/bin/activate:
 rst: build/venv/bin/activate
 	sh -c '. $(CURDIR)/build/venv/bin/activate; sphinx-apidoc -o $(CURDIR)/sphinx -e $(CURDIR)/gwn'
 
-apidocs: py-syntax-check build/venv/bin/activate rst
+apidocs: build/venv/bin/activate rst
 	mkdir -p build/docs
 	sh -c '. $(CURDIR)/build/venv/bin/activate; make -C sphinx html'
 
