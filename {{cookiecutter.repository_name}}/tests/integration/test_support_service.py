@@ -6,7 +6,7 @@ import pytest
 
 @pytest.fixture( scope = 'session' )
 def support_service():
-    obj = dbus.SessionBus().get_object( '{{ cookiecutter.dbus_bus_name }}', '{{ cookiecutter.dbus_support_object_path }}' )
+    obj = dbus.SystemBus().get_object( '{{ cookiecutter.dbus_bus_name }}', '{{ cookiecutter.dbus_support_object_path }}' )
     iface = dbus.Interface( obj, dbus_interface = '{{ cookiecutter.dbus_support_interface }}' )
     return iface
 
