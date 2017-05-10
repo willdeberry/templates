@@ -5,6 +5,8 @@ Description={{ cookiecutter.systemd_service_description }}
 Type=dbus
 BusName={{ cookiecutter.dbus_bus_name }}
 ExecStart=/usr/bin/{{ cookiecutter.service_executable }}
+EnvironmentFile=-/etc/default/gwn
+EnvironmentFile=-/etc/default/{{ cookiecutter.debian_package_name }}
 User={{ cookiecutter.service_run_as_user }}
 
 [Install]
