@@ -7,6 +7,7 @@ BusName={{ cookiecutter.dbus_bus_name }}
 ExecStart=/usr/bin/{{ cookiecutter.service_executable }}
 EnvironmentFile=-/etc/default/gwn
 EnvironmentFile=-/etc/default/{{ cookiecutter.debian_package_name }}
+Restart=always
 
 [Install]
 WantedBy=xorg.target
